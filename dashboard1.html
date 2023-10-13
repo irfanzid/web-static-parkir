@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parkir Untidar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Merriweather:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <span class="fs-5 d-none d-sm-inline">Menu</span>
+            </a>
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link align-middle px-0"> <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span> </a>
+              </li>
+              <li>
+                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle"> <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Data Realtime</span> </a>
+                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                  <li class="w-100">
+                    <a href="dashboard1.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Parkir Masuk</span> <i class="bi bi-box-arrow-right"></i></a>
+                  </li>
+                  <li>
+                    <a href="dashboard2.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Parkir Keluar</span> <i class="bi bi-box-arrow-left"></i></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle"> <i class="fs-4 bi bi-clock-history"> </i> <span class="ms-1 d-none d-sm-inline">History</span></a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-0 align-middle"> <i class="fs-4 bi bi-cloud-download"></i> <span class="ms-1 d-none d-sm-inline">Unduh</span> </a>
+              </li>
+            </ul>
+            <hr />
+            <div class="dropdown pb-4">
+              <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="gambar/logo.png" alt="hugenerd" width="30" height="30" class="rounded-circle" />
+                <span class="d-none d-sm-inline mx-1">User</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="login.html">Log out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col py-3 mt-3">
+          <h3 class="text-style text-center">Data Parkir Masuk</h3>
+          <div class="table-responsive-md mt-3">
+            <table class="table table-bordered table-dark table-striped text-style2">
+              <thead>
+                <tr>
+                  <th scope="col">NO</th>
+                  <th scope="col">Plat</th>
+                  <th scope="col">UID</th>
+                  <th scope="col">Waktu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>AA 5678 BB</td>
+                  <td>6ED43H48</td>
+                  <td>2023-10-05 10:32:09</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- Content -->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
